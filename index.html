@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/jparallax.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .parallax-viewport{
+            width: 800px;
+            height: 400px;
+            max-width: 60em;
+            background-color: black;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Frankenstein</h1>
+    <div style="width: 800px; margin: auto;">
+        <!-- Inicia vemtana de paralaje  -->
+        <div class="parallax-viewport" id="parallax">
+
+            <!-- Capas de paralaje -->
+            <div class="parallax-layer" style="width: 2256px; height: 461px;">
+                <img src="imagen/imagen1.jpg" style="position: absolute; left: 0px; top: 0px;">
+            </div>
+
+            <div class="parallax-layer" style="width: 2000px; height: 461px;">
+                <img src="imagen/imagen2.png"
+                style="position: absolute; top: 10px; left: 10px;">
+            </div>
+
+            <div class="parallax-layer" style="width: 2200px; height: 461px;">
+                <img src="imagen/imagen3.png" alt=""
+                style="position: absolute; top: px; left: px;">
+            </div>
+
+        </div>  
+    </div>
+
+    <!-- el contenido -->
+    <div class="contenedor">
+        <p>En un lejano castillo el doctor Frankenstein estaba llevando a cabo una obscura y prohibida teoría que consistía en juntar distintas partes de seres humanos y lograr formar un nuevo ser dándole vida por medios artificiales.
+            Todos sus colegas se habían burlado brutalmente de él, a tal punto que tomándole por loco lo habían expulsado de la academia médica. Esto último hizo que Frankenstein se obsesionara aún más con su experimento, tanto que ya no salía de su laboratorio nada más que para buscar cadáveres recientes de convictos, que pudieran servir a su investigación.</p>
+        <p>Al cabo de largos meses logró su objetivo, esa misma noche pondría en marcha su plan. ¡ Sólo era necesario un rayo que suministrara la corriente necesaria para que su criatura viviera!</p>
+        <p>La tormenta estaba totalmente fuera de control, un rayo dió en la torre del castillo y milagrosamente el monstruo comenzó a mover lentamente sus dedos, y entonces aturdido abrió los ojos.
+            Frankenstein estaba dichoso había triunfado... ¡ Por fin sería declarado un genio de la medicina!, pero primero debía hacer algunas correcciones, la criatura vivía pero era tan torpe como un bebé.
+        </p>
+        <p>
+            Pasaron largos meses durante los cuales el doctor y Brenda, su ayudante, se dedicaron a enseñar a la criatura, cuidando de no dar detalles de su apariencia, y manteniéndolo oculto, pero aquella tarde Frankie, tal era el nombre que le había dado el doctor al monstruo, logró burlar la vigilancia y salir del castillo.
+        </p>
+        <p>
+            Todo era nuevo y maravilloso a sus ojos, mariposas, aves, flores... pero entonces una pequeña que jugaba en el lugar lo vió y comenzó a gritar asustada. Frank no comprendía lo que sucedía hasta que se vió reflejado en el lago. ¡ Era una criatura abominable! Por su ojos brotó una lágrima de dolor, la multitud comenzó a correrlo y a gritarle, esto lo atemorizó y solamente atinó a correr al castillo donde estaba su creador. Cuando se enfrentó al doctor Frankenstein lo miró largamente y preguntó: ¿Por qué, por qué me has creado?¿ No ves que me odian ?
+        </p>
+        <p>
+            Entonces el doctor respondió: ¡No, no es a ti a quien odian!
+            ¿ Acaso no ves su ignorancia? ¡ Odian lo desconocido, odian la ciencia y me odian a mí! ¡Escapa tú eres único, eres mi triunfo, debes salvarte!
+            Cuando terminó de decir estas palabras le enseñó una salida secreta y luego trató de sofocar el fuego que la muchedumbre embravecida había encendido en su laboratorio pero fue inútil y cayó abatido por las llamas.
+            Todos marcharon contentos pues pensaron que habían destruido a Frankenstein y a su creación pero... ¿Sería eso verdad?
+            Lejos, muy lejos en la montaña un anciano hermitaño casi ciego había encontrado un verdadero amigo al que llegaría a querer como a un hijo.
+        </p>
+
+        <h1>FIN</h1>
+        
+    </div>
+
+    <!-- El javaScript -->
+    <script src="js/jquery1.7.2.js"></script>
+    <script src="js/jquery.event.frame.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('#parallax .parallax-layer')
+            
+            .parallax({
+                mouseport: jQuery('#parallax')
+            });
+        });
+    </script>
+</body>
+</html>
